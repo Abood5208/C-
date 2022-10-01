@@ -1,0 +1,109 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float a,b;
+    int lol;
+    cout << "Please choose the operation that you want:" << endl << endl;
+    cout << "1- Summation" << endl;
+    cout << "2- Subtraction" << endl;
+    cout << "3- Multiplication" << endl;
+    cout << "4- Division" << endl;
+    cout << "5- Sqrt" << endl;
+    cout << "6- Cbrt" << endl;
+    cout << "7- Power" << endl;
+    cout << "8- Fabs x" << endl;
+    cout << "9- Floor x" << endl;
+    cout << "10- Ceil x" << endl << endl;
+    cout << "The operation is number: ";
+    cin >> lol;
+    cout << endl;
+    switch(lol)
+    {
+    case 1:
+        cout << "Write the first number please: " ;
+        cin >> a;
+        cout << endl;
+        cout << "Write the second number please: " ;
+        cin >> b;
+        cout << endl;
+        cout << "The result is: " << a << " + " << b << " = " << a + b << endl;
+        break;
+    case 2:
+        cout << "Write the first number please: " ;
+        cin >> a;
+        cout << endl;
+        cout << "Write the second number please: " ;
+        cin >> b;
+        cout << endl;
+        cout << "The result is: " << a << " - " << b << " = " << a - b << endl;
+        break;
+    case 3:
+        cout << "Write the first number please: " ;
+        cin >> a;
+        cout << endl;
+        cout << "Write the second number please: " ;
+        cin >> b;
+        cout << endl;
+        cout << "The result is: " << a << " * " << b << " = " << a * b << endl;
+        break;
+    case 4:
+        cout << "Write the first number please: " ;
+        cin >> a;
+        cout << endl;
+        cout << "Write the second number please: " ;
+        cin >> b;
+        cout << endl;
+        if (b == 0){
+            cout << "Cant division by zero.." << endl;
+        }
+        else{
+            cout << "The result is: " << a << " / " << b << " = " << a / b << endl;
+        }
+        break;
+    case 5:
+        cout << "Write the number : " ;
+        cin >> a;
+        cout << endl;
+        cout << "The result is: Sqrt(" << a << ") = " << sqrt(a) << endl;
+        break;
+    case 6:
+        cout << "Write the number : " ;
+        cin >> a;
+        cout << endl;
+        cout << "The result is: Cbrt(" << a << ") = " << cbrt(a) << endl;
+        break;
+    case 7:
+        cout << "Write the number please: " ;
+        cin >> a;
+        cout << endl;
+        cout << "Write the power number please: " ;
+        cin >> b;
+        cout << endl;
+        cout << "The result is: " << a << " ^ " << b << " = " << pow(a,b) << endl;
+        break;
+    case 8:
+        cout << "Write the number please: " ;
+        cin >> a;
+        cout << endl;
+        cout << "The result is: fabs (" << a << ") = " <<fabs (a) << endl;
+        break;
+    case 9:
+        cout << "Write the number please: " ;
+        cin >> a;
+        cout << endl;
+        cout << "The result is: Floor (" << a << ") = " << floor (a) << endl;
+        break;
+    case 10:
+        cout << "Write the number please: " ;
+        cin >> a;
+        cout << endl;
+        cout << "The result is: ceil (" << a << ") = " << ceil (a) << endl;
+        break;
+    default:
+        cout << "Unknown operation, please try again " << endl;
+    }
+}
